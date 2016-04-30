@@ -46,4 +46,12 @@ public class Vertex {
 	public Collection<Vertex> getAdjacentVertices(){
 		return myEdges.keySet();
 	}
+
+	public boolean equals(Vertex o) {
+		if(this.getName()==o.getName()){
+			return true;
+		}else{
+			return false;
+		}
+	}
 }
